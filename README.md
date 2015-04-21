@@ -8,14 +8,16 @@ The packages are all (submitted to be/eventually) published to the main chocolat
 Create the initial templates:
 
 ```powershell
-choco new shellexview maintainername="Ryan Pavlik" packageversion=1.90.0.0 url=http://www.nirsoft.net/utils/shexview.zip url64=http://www.nirsoft.net/utils/shexview-x64.zip maintainerrepo=rpavlik/nirsoft-chocolatey
+choco new shellexview packageversion=1.90.0.0 url=http://www.nirsoft.net/utils/shexview.zip url64=http://www.nirsoft.net/utils/shexview-x64.zip maintainername="Ryan Pavlik" maintainerrepo=rpavlik/nirsoft-chocolatey
 ```
 
 Remove the uninstall script - these are all just zip files.
 
 Edit the install script - will resemble the ShellExView one.
 
-Edit the `nuspec` file - again, will resemble the ShellExView one.
+Grab the icon from the web page and stick it in the icons directory.
+
+Edit the `nuspec` file - again, will resemble the ShellExView one. Note that we'll want capitalization in the `name` but not the `id`.
 
 
 ## License
