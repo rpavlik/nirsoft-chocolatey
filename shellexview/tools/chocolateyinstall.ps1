@@ -16,4 +16,4 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Install-ChocolateyZipPackage "$packageName" "$url" "$toolsDir" "$url64" -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType
 
 # Create the dummy file to indicate a GUI shim needed
-New-Item -ItemType file $(Join-Path $toolsDir 'shexview.exe.gui')
+New-Item -ItemType file $(Join-Path "$toolsDir" 'shexview.exe.gui')
