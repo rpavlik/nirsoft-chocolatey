@@ -13,7 +13,7 @@ $checksum64 = 'EDE598083ECE04C9C1A72F7C465A5243A785CA7F'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # Install the zip file - checksums are required since the download doesn't have a version in its name.
-Install-ChocolateyZipPackage "$packageName" "$url" "$toolsDir"  -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType
+Install-ChocolateyZipPackage "$packageName" "$url" "$toolsDir" "$url64" -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType
 
 # Create the dummy file to indicate a GUI shim needed
 New-Item -ItemType file $(Join-Path $toolsDir 'shexview.exe.gui')
