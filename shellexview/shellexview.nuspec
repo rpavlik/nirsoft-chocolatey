@@ -5,11 +5,13 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>shellexview</id>
     <title>ShellExView</title>
-    <version>1.90.0.0</version>
+    <version>1.90.0.20150421</version>
     <authors>Nir Sofer</authors>
     <owners>Ryan Pavlik</owners>
     <summary>Shell Extensions Manager</summary>
     <description>Allows you to view and enable/disable shell extensions, that often add context-menu items to Explorer.
+
+    Installs within the Chocolatey package directory, with shims created so you can get to it through the path.
     </description>
     <projectUrl>http://www.nirsoft.net/utils/shexview.html</projectUrl>
     <tags>shellexview shexviewadmin</tags>
@@ -17,11 +19,10 @@
     <licenseUrl>http://www.nirsoft.net/utils/shexview.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/rpavlik/nirsoft-chocolatey/master/icons-from-web/shexview_icon.gif</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.5" /> <!-- for Install-BinFile working properly -->
+    </dependencies>
+    <releaseNotes>Added a shim with the name ShellExView, for easier launching, made install more robust, and added (what I thought was unneeded) uninstall support.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
