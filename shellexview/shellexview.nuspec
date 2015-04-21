@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>shellexview</id>
+    <title>ShellExView</title>
+    <version>1.90.0.0</version>
+    <authors>Nir Sofer</authors>
+    <owners>Ryan Pavlik</owners>
+    <summary>Shell Extensions Manager</summary>
+    <description>Allows you to view and enable/disable shell extensions, that often add context-menu items to Explorer.
+    </description>
+    <projectUrl>http://www.nirsoft.net/utils/shexview.html</projectUrl>
+    <tags>shellexview shexviewadmin</tags>
+    <copyright>Copyright (c) 2003 - 2014 Nir Sofer</copyright>
+    <licenseUrl>http://www.nirsoft.net/utils/shexview.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://cdn.rawgit.com/rpavlik/nirsoft-chocolatey/master/icons-from-web/shexview_icon.gif</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
