@@ -5,6 +5,9 @@ The packages are all (submitted to be/eventually) published to the main chocolat
 
 ## General process for creation
 
+Just copy an existing package, and edit the `nuspec` and the `tools\config.ps1` file.
+
+### Old way
 Create the initial templates:
 
 ```powershell
