@@ -18,7 +18,7 @@
     <copyright>Copyright (c) 2003 - 2014 Nir Sofer</copyright>
     <licenseUrl>http://www.nirsoft.net/utils/shexview.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/rpavlik/nirsoft-chocolatey/master/icons-from-web/shexview_icon.gif</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/rpavlik/nirsoft-chocolatey/078315959537536186d124396d1c8a8d434442c6/icons-from-web/shexview_icon.gif</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.5" /> <!-- for Install-BinFile working properly -->
     </dependencies>
